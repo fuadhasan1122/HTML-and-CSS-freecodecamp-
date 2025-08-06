@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Developer Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Web Developer Survey</h1>
+    <p id="description">Help us understand your journey in web development by filling out this short survey.</p>
+
+    <form id="survey-form">
+      <!-- Name -->
+      <label id="name-label" for="name">Full Name:</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your full name"
+        required
+      /><br /><br />
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email Address:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@domain.com"
+        required
+      /><br /><br />
+
+      <!-- Age (Number input) -->
+      <label id="number-label" for="number">Your Age:</label><br />
+      <input
+        type="number"
+        id="number"
+        name="age"
+        placeholder="Enter your age"
+        min="10"
+        max="99"
+      /><br /><br />
+
+      <!-- Dropdown -->
+      <label for="dropdown">What is your current role?</label><br />
+      <select id="dropdown" name="role">
+        <option value="">--Select an option--</option>
+        <option value="student">Student</option>
+        <option value="professional">Professional Developer</option>
+        <option value="career-switcher">Career Switcher</option>
+      </select><br /><br />
+
+      <!-- Radio buttons -->
+      <p>How did you first learn web development?</p>
+      <input type="radio" name="learning-source" value="school" id="school" />
+      <label for="school">School/College</label><br />
+
+      <input type="radio" name="learning-source" value="self" id="self" />
+      <label for="self">Self-taught</label><br />
+
+      <input type="radio" name="learning-source" value="bootcamp" id="bootcamp" />
+      <label for="bootcamp">Bootcamp</label><br /><br />
+
+      <!-- Checkboxes -->
+      <p>Which technologies are you familiar with? (Select all that apply)</p>
+      <input type="checkbox" name="tech" value="html" id="html" />
+      <label for="html">HTML</label><br />
+
+      <input type="checkbox" name="tech" value="css" id="css" />
+      <label for="css">CSS</label><br />
+
+      <input type="checkbox" name="tech" value="js" id="js" />
+      <label for="js">JavaScript</label><br />
+
+      <input type="checkbox" name="tech" value="react" id="react" />
+      <label for="react">React</label><br /><br />
+
+      <!-- Textarea -->
+      <label for="comments">Any comments or suggestions?</label><br />
+      <textarea
+        id="comments"
+        name="comments"
+        rows="5"
+        cols="40"
+        placeholder="Share your thoughts here..."
+      ></textarea><br /><br />
+
+      
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
