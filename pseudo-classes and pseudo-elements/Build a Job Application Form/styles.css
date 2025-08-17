@@ -1,0 +1,105 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+
+input:first-of-type {
+  border-radius: 15px;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+
+.radio-group {
+  margin-top: 15px;
+  border: none;
+}
+
+.radio-group label {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+.radio-group input[type="radio"]:checked {
+  border: 2px solid #007BFF;
+  background-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+.radio-group input[type="radio"]:checked + span,
+.radio-group input[type="radio"]:checked + label {
+  color: #007BFF;
+  font-weight: bold;
+}
+
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background: #007BFF;
+  color: white;
+  border: none;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+input:focus,
+textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
